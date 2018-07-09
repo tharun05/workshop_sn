@@ -1,0 +1,26 @@
+.color{
+    color: #00426f;
+}
+.save{
+    padding: 30px;
+}
+.save button{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+aside {
+    width: 100%;
+    height: calc(100vh - 0px);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    overflow: scroll !important;
+}
+.profile-details .col-md-4{
+    padding: 0px;
+    // text-align: right;
+    padding-top: 8px;
+}

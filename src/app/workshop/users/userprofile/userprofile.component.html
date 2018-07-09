@@ -1,0 +1,70 @@
+<aside>
+  <article>
+    <mat-toolbar style="padding:0px">
+      <h5 style="margin-left: 30px;">Users Profile</h5>
+    </mat-toolbar>
+  </article>
+  <main class="padding">
+    <mat-card>
+    <div class="padding-side">
+        <div fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="25" fxFlex.xl="25" class="padding">
+            <mat-card fxLayout="row wrap" fxLayoutAlign="center center" style="height: 213px;     padding: 0px;" >
+                <img-load fxFlex="100" [img]="profileData.image ? profileData.image : profileData.image"></img-load>
+                <!-- <P fxFlex="100" style="text-align:center;" class="btn-img">
+                    <img-crop (outputEvent)="outputEvent($event)"></img-crop>
+                </P> -->
+            </mat-card>
+        </div>
+  </div>
+
+    <div class="padding-side">
+        <mat-card class="margin-side">
+            <h3 class="topic-title">{{profileData.firstname}}</h3>
+          <div fxLayout="row wrap">
+            <div fxFlex.xs="100" fx.Flex.sm="50" fx.flex.md="33.333">
+                <div class="hpair">
+                    <span>First Name: </span>
+                    <span>{{profileData.firstname}}</span>
+                  </div>
+              <div class="hpair">
+                <span>Last name: </span>
+                <span>{{profileData.lastname}}</span>
+              </div>
+              <div class="hpair">
+                <span>Email: </span>
+                <span>{{profileData.email}}</span>
+              </div>
+              <div class="hpair">
+                  <span>College Name</span>
+                  <span>{{profileData.collegeName}}</span>
+              </div>
+              <div class="hpair">
+                  <span>Year of pass out</span>
+                  <span>{{profileData.yearOfPassing}}</span>
+              </div>
+              <div class="hpair">
+                  <span>Stream</span>
+                  <span>{{profileData.stream}}</span>
+              </div>
+              <div class="hpair">
+                <span>Interested Technolgoes</span>
+                <span>{{profileData.interstedTech}}</span>
+              </div>
+              <div class="hpair">
+                <span>Company Name</span>
+                <span>{{profileData.companyName}}</span>
+              </div>
+              <div class="hpair">
+                  <span>Designation</span>
+                  <span>{{profileData.workingOn}}</span>
+              </div>
+             
+            </div>
+          </div>
+  
+        </mat-card>
+  
+      </div>
+      </mat-card>
+  </main>
+</aside>
