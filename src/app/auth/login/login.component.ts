@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   status:any;
   UserDetailsForm: FormGroup;
   login : Login = new Login;
+
   isActive: boolean = false;
   showServerError: String;
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
@@ -25,11 +26,14 @@ export class LoginComponent implements OnInit {
      });
      this.authService.userLoginEmit();
      //this.getDummyList();
+     console.log(this.login)
   }
 
   ngOnInit() {
   }
   Login(){
+    console.log(this.login)
+    console.log(this.authService.login('adsfs'))
     this.authService.login(this.login)
         .subscribe(
             data => {
