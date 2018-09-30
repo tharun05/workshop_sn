@@ -17,7 +17,6 @@ export class AuthService extends CommonService {
   token: string;
   constructor(private http: Http, private router: Router, private activatedroute: ActivatedRoute, private appService: AppService) {
     super();
-
   }
   login(data): Observable<any> {
     this.url = this.host + "login";
